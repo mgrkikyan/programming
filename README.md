@@ -40,7 +40,37 @@ int main()
 ```
 
 ### 4. Скомпилируйте и запустите её
+![Image text](https://github.com/mgrkikyan/programming/blob/main/команда%20компиляции.png)
 
+### 5. Получите по отдельности результаты каждого этапа компиляции
+## Препроцессор
+![Image text](https://github.com/mgrkikyan/programming/blob/main/препроцессор.png)
+## Компилятор
+### Код ассемблера
+![Image text](https://github.com/mgrkikyan/programming/blob/main/код%20ассемблера.png)
+## Ассемблирование 
+### Объектный файл 
+![Image text](https://github.com/mgrkikyan/programming/blob/main/объектный%20файл.png)
 
+### 7. Сделайте коммит и пуш
+![Image text](https://github.com/mgrkikyan/programming/blob/main/коммит%20и%20пуш.png)
 
-## 
+### 8. Добавьте для себя в отчёт шпаргалку по работе с git
+ ```shell
+git clone
+git add .
+git commit
+git push
+```
+
+`git clone` - команда, используемая для создания копии определенного репозитория или ветки в репозитории.
+
+`git add` добавляет новые или измененные файлы в рабочем каталоге в промежуточную область Git.
+
+`git commit` создает фиксацию, которая похожа на снимок репозитория. Фиксации включают в себя множество метаданных в дополнение к содержимому и сообщению, таких как автор, временная метка и многое другое.
+
+`git push` загружает все локальные фиксации ветки в соответствующую удаленную ветку.
+
+## Список использованных источников:
+1. https://github.com/git-guides
+2. https://github.com/still-coding/report_demo/blob/main/README.md?plain=
