@@ -45,9 +45,15 @@ int main()
 ### 5. Получите по отдельности результаты каждого этапа компиляции
 ## Препроцессор
 ![Image text](https://github.com/mgrkikyan/programming/blob/main/препроцессор.png)
+```
+gcc first.c -Wall -E > first.e
+```
 ## Компилятор
 ### Код ассемблера
 ![Image text](https://github.com/mgrkikyan/programming/blob/main/код%20ассемблера.png)
+```
+gcc first.c -Wall -o first.s -S
+```
 ## Ассемблирование 
 ### Объектный файл 
 ![Image text](https://github.com/mgrkikyan/programming/blob/main/объектный%20файл.png)
