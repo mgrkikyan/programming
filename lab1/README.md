@@ -64,7 +64,9 @@ int main()
     return 0;
 }
 ```
+#### Тест 
 
+![Image text](https://github.com/mgrkikyan/programming/blob/main/lab1/Ввод%20данных.png)
 
 ## Список использованных источников:
 1.https://cpp.com.ru/shildt_spr_po_c/index.html#03
