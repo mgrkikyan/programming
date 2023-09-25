@@ -1,27 +1,34 @@
+//Вариант 5
+
+/* 
+Трудности с написанием кода 
+*/
+
 #include <stdio.h>
 #include <math.h>
 
-int main()
+void main ()
 {
-	float x,y;
-	for(x=0;x<=1.5;x++)
-	{
-		while (x>=0 && x<=1.5)
-		{
-			y=pow(2,x)-2+pow(x,2);
-			printf("x=%f y=%f\n",x,y);
-		}
-	}
+    double x, y;
+    printf("x         y  \n");
+    x=0;
+    while(x<=1.5)
+    {
+        y = pow (2,x) - 2 + pow (x,2);
+        printf ("%f %f\n", x, y);
+        x = x + 1;
+    } 
 }
 
+void main1 ()
 {
-	float x,y;
-	for(x=1.5;x<=3;x++)
+    double x, y;
+    printf ("x         y \n");
+    x=1.5;
+    while (x<=3)
     {
-		while (x>1.5 && x<=3)
-        {
-			y=(pow(x,0.5))*exp(-pow(x,2));
-			printf("X=%lf Y=%lf\n",x,y);
-		}
-	}
+        y=(pow(x,0.5))*exp(-pow(x,2));
+        printf ("%f %f\n", x, y);
+        x = x + 1;
+    }
 }
