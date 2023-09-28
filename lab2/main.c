@@ -1,6 +1,3 @@
-// Вариант 5
-
-
 #include <stdio.h>
 #include <math.h>
 
@@ -12,14 +9,13 @@ int main()
     scanf("%lf", &h);
     eps = h / 2.0;
     printf("x\t\ty\n");
-    while(x >= 0.0 && x <= 3.0 + eps)
+    for(x = 0.0; x <= 3.0 + eps; x = x + h)
     {
         if(x <= 1.5 + eps)
           y = pow(2.0, x) - 2.0 + pow(x, 2);
         else
           y = sqrt(x) * exp(-pow(x, 2));
         printf("%f\t%f\n", x, y);
-        x = x + h;
     }
     return 0;
 }
