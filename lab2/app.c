@@ -1,33 +1,29 @@
 // Вариант 5
 
-// Ещё не готовый код 
-
 
 #include <stdio.h>
 #include <math.h>
 
-void main ()
+int main()
 {
-    double x, y;
-    printf("x         y  \n");
-    x=0;
-    while(x<=1.5)
+    double x = 0.0, y;
+    double eps;
+    double h;
+    scanf("%lf", &h);
+    eps = h / 2.0;
+    printf("x\t\ty\n");
+    while(x >= 0.0 && x <= 1.5)
     {
-        y = pow (2,x) - 2 + pow (x,2);
-        printf ("%f %f\n", x, y);
-        x = x + 1;
+        y = pow(2.0, x) - 2.0 + pow(x, 2);
+        printf("%f\t%f\n", x, y);
+        x = x + h;
     } 
-}
-
-void main1 ()
-{
-    double x, y;
-    printf ("x         y \n");
-    x=1.5;
-    while (x<=3)
+    
+    while(x <= 3.0 + eps)
     {
-        y=(pow(x,0.5))*exp(-pow(x,2));
-        printf ("%f %f\n", x, y);
-        x = x + 1;
+        y = sqrt(x) * exp(-pow(x, 2));
+        printf("%f\t%f\n", x, y);
+        x = x + h;
     }
+    return 0;
 }
